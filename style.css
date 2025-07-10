@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0px;
   box-sizing: border-box;
   font-weight: bold;
   text-align: center;
@@ -10,9 +10,10 @@ body {
   background: lightgrey;
 }
 
-h1 {
-  gap: 0.5rem;
-  margin: 1rem;
+h1,
+.selector {
+  gap: 1rem;
+  margin: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,12 +47,4 @@ div#dicesImages {
 
 #dicesImages img{
   margin: 0.5rem;
-}
-
-.selector {
-  gap: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
