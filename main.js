@@ -7,12 +7,12 @@ function roll() {
   }
   const dicesResult = document.querySelector("#dicesResult")
   dicesResult.textContent = `Result: ${dices.join(', ')}`
-  
+
   const dicesImages = document.querySelector("#dicesImages")
   dicesImages.innerHTML = ''
 
-  for (dice in dices) {
-    dicesImages.innerHTML += `<img src="images/${dices[dice]}.png" width="100" alt="${dices[dice]}">`
+  for (let dice of dices) {
+    dicesImages.innerHTML += `<img src="images/${dice}.png" width="100" alt="${dice}">`
   }
 }
 
